@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 22% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 22% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 22% 20%;
+
+    --primary: 210 55% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 198 65% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 198 65% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 55% 20%;
+
+    --radius: 0.5rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(210, 55%, 20%) 0%, hsl(198, 65%, 50%) 100%);
+    --gradient-card: linear-gradient(to bottom, hsl(0, 0%, 100%) 0%, hsl(210, 40%, 98%) 100%);
+    --shadow-card: 0 4px 6px -1px rgba(26, 46, 74, 0.1), 0 2px 4px -1px rgba(26, 46, 74, 0.06);
+    --shadow-card-hover: 0 10px 15px -3px rgba(26, 46, 74, 0.15), 0 4px 6px -2px rgba(26, 46, 74, 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 210 55% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 210 50% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 210 50% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 210 55% 20%;
+
+    --secondary: 198 65% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 198 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 40% 25%;
+    --input: 210 40% 25%;
+    --ring: 198 65% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
