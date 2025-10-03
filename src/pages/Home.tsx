@@ -10,19 +10,19 @@ const Home = () => {
     {
       icon: <PieChart className="h-8 w-8 text-secondary" />,
       title: "Valuation Reports",
-      description: "Comprehensive business valuations across multiple industries with detailed analysis and insights.",
+      description: "Comprehensive financial asset valuations with detailed financial analysis.",
       link: "/valuation",
     },
     {
       icon: <Briefcase className="h-8 w-8 text-secondary" />,
       title: "Corporate Finance",
-      description: "Expert guidance on investment decisions, financing strategies, and dividend policies.",
+      description: "Analyses of performance and strategy based on Investment,Finance and Dividend decisions.",
       link: "/finance",
     },
     {
       icon: <TrendingUp className="h-8 w-8 text-secondary" />,
       title: "Investment Insights",
-      description: "Market analysis, trends, and strategic investment recommendations for informed decision-making.",
+      description: "This is a catch-all category where we talk anything finance.",
       link: "/insights",
     },
   ];
@@ -44,10 +44,10 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Smart Capital Solutions
+              Welcome to Hamilton Investments
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Professional valuation services and investment insights for informed business decisions
+              We share in-depth financial assets valuation reports, corporate finance analyses, and general investment insights — designed for investors, analysts, and curious minds alike. Our platform is open for collaboration, critique, and fresh perspectives. Whether you’re here to share ideas or challenge assumptions, you’re part of the conversation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="lg" asChild>
@@ -72,9 +72,9 @@ const Home = () => {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Blog Categories</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Delivering comprehensive financial analysis and strategic insights to drive your business forward
+              Craftsmanship is refined through practice. Below are products of our 10,000hrs.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -105,12 +105,12 @@ const Home = () => {
       {/* CTA Section */}
       <section id="contact" className="py-20 gradient-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Have a recommendation?</h2>
           <p className="text-xl mb-8 text-white/90">
-            Let's discuss how our financial expertise can help your business thrive
+            Recommend a company,Financial asset or transaction you want to see valued/Analyzed.
           </p>
           <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-            Schedule a Consultation
+            Recommend
           </Button>
         </div>
       </section>
